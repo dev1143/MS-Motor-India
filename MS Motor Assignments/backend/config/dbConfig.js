@@ -1,8 +1,9 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "pass@123",
-    DB: "ms_motor",
+    HOST: process.env.DB_HOST || "localhost",
+    USER: process.env.DB_USER || "root",
+    PASSWORD: process.env.DB_PASSWORD || "password",
+    DB: process.env.DB_NAME || "dbname",
+    PORT: process.env.DB_PORT || 3306,
     dialect: "mysql",
     pool: {
         max: 5,

@@ -1,0 +1,109 @@
+.box-div {
+    padding: 2%;
+    /* width: 51%; */
+    background-color: #cccccc;
+    background-image: linear-gradient(rgb(93, 125, 127), rgb(241, 241, 233));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paper-div {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 5%;
+    margin: 0 auto
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.responsive-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.file-upload-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.file-chip {
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.customUpload {
+    background-color: #1976d2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.MuiPaper-root::-webkit-scrollbar {
+    display: none !important;
+    width: 100px;
+
+}
+
+.css-ptdwpq-MuiPaper-root-MuiAppBar-root {
+    background-color: #728394 !important;
+}
+
+.css-1vjdlt9-MuiTableCell-root {
+    background-color: #cac9d6 !important;
+}
+
+.ms-motor-logo {
+    height: 64px;
+    width: 67px;
+    border-radius: 21px;
+}
+
+.bottom-actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile friendly adjustments */
+@media (max-width: 600px) {
+    .bottom-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .file-upload-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .customUpload {
+        text-align: center;
+    }
+}

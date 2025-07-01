@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const bcrypt = require("bcrypt")
 const { bodyParser, urlencoded } = require('body-parser');
 const users = require('./routes/users')
@@ -10,7 +11,7 @@ const cors = require("cors");
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
-    origin: 'http://localhost:3001',  // Allow requests from this origin
+    origin: 'http://localhost:3000',  // Allow requests from this origin
     methods: ['GET', 'POST'],  // Allow specific methods (adjust as needed)
     allowedHeaders: ['Content-Type', 'Authorization'],  // Allow specific headers (if necessary)
 };
